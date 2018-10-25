@@ -300,7 +300,7 @@ PAYPAL_API_PASSWORD = '8RHRZKYSZA4M27NT'
 PAYPAL_API_SIGNATURE = 'AaRqzFzEYZkTaGLx3jQi3X.SuTGSAM.Q32eZQlvJvlfTYtTsSZQQu6VH'
 
 # Standard currency is GBP
-PAYPAL_CURRENCY = PAYPAL_PAYFLOW_CURRENCY = 'INR'
+PAYPAL_CURRENCY = PAYPAL_PAYFLOW_CURRENCY = 'USD'
 PAYPAL_PAYFLOW_DASHBOARD_FORMS = True
 
 # Put your own sandbox settings into an integration.py modulde (that is ignored
@@ -310,6 +310,14 @@ try:
 except ImportError:
     pass
 
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'jobmatesting@gmail.com'
+EMAIL_HOST_PASSWORD = '@dm1n@123#'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = True
 
+
+OSCAR_SHOP_NAME = 'Sandeep'
+OSCAR_SHOP_TAGLINE = 'Kumar'
