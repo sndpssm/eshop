@@ -310,13 +310,9 @@ try:
 except ImportError:
     pass
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'jobmatesting@gmail.com'
-EMAIL_HOST_PASSWORD = '@dm1n@123#'
-EMAIL_PORT = 465
-EMAIL_USE_TLS = True
+
 
 
 OSCAR_SHOP_NAME = 'Sandeep'
